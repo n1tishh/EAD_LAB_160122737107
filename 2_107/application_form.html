@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+        .container {
+            padding: 20px;
+            background-color: white;
+            margin: 20px auto;
+            max-width: 600px;
+            border: 1px solid white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        * {
+            box-sizing: border-box;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input[type=text], input[type=number], select {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid white;
+            border-radius: 4px;
+            background-color: white;
+        }
+        hr {
+            border: 1px solid white;
+            margin: 20px 0;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            background-color: #007bff;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        address {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Application Form</h1>
+        <form action="">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter name">
+            <hr>
+            <label for="Roll">Roll</label>
+            <input type="number" name="Roll" id="Roll" placeholder="Enter Roll">
+            <hr>
+            <label for="Email">Email</label>
+            <input type="text" name="Email" id="email" placeholder="Enter email">
+            <hr>
+            <label for="Branch">Branch</label>
+            <input type="text" name="branch" id="branch" placeholder="Enter Branch">
+            <hr>
+            <label for="Gender">Gender</label>
+                <input type="radio" id="male" name="male" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="female" value="female">
+                <label for="female">Female</label><br>
+            <hr>
+            <address>
+                <label for="address">Address</label>
+                <input type="text" name="address" id="address" placeholder="Enter Address">
+            </address>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
